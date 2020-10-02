@@ -1,0 +1,24 @@
+Environment:
+    - The software shall be executable by vanilla python >= 3.5.
+
+Input:
+    - The software shall read user configurations for bike, train, car commute, an email key and the default commute method.
+    - The bike config shall include start coordinates, destination coordinates, a treshold for rain likelihood and a treshold for headwind.
+    - The train config shall include the start train station, the destination train station, the id of the train and a treshold for estimated late arrival.
+    - The car config shall include the start coordinates, destination coordinates, a treshold for the estimated travel time.
+
+Behaviour:
+    - When the treshold for the default commute method is violated, the software shall notify the client via email.
+    - The notification email subject shall be "Commute warning"
+    - The notification email content shall be in the following format:
+            """        
+            The threshold <threshold> of <default commute method> is expected to be violated.
+
+            for every commute method:
+                Commute method: <commute method>
+                for every Threshold in the commute method:
+                    Threshold:<threshold of default commute method>
+                    Estimation: <estimation> 
+            """
+    - In the notification email, all estimations that violate the estimation shall be coloured red, all estimations that meet the treshold exactly shall be 
+      colored orange.
