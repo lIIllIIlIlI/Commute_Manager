@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-02T16:57:02.945Z" agent="5.0 (Windows)" etag="aojpnpq35ZjlQwsQGWV1" version="13.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-02T17:00:44.378Z" agent="5.0 (Windows)" etag="O_YSqKh_LUgYBCJraElw" version="13.7.7" type="github">
   <diagram id="schZW7jJ0T7BrjeHntlN" name="Page-1">
     <mxGraphModel dx="2249" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,7 +22,7 @@
         <mxCell id="j0BSqw5cxHRsi-WtKrp--9" value="Bike" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-130" y="190" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="j0BSqw5cxHRsi-WtKrp--19" value="&lt;div align=&quot;center&quot;&gt;email&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" vertex="1" parent="1">
+        <mxCell id="j0BSqw5cxHRsi-WtKrp--19" value="Email" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" vertex="1" parent="1">
           <mxGeometry x="326" y="40" width="176" height="545" as="geometry" />
         </mxCell>
         <mxCell id="j0BSqw5cxHRsi-WtKrp--23" value="commute_manager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
