@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-03T12:25:15.465Z" agent="5.0 (Windows)" etag="d2XvMf77h-ROrbD1u5EH" version="13.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-03T12:25:27.722Z" agent="5.0 (Windows)" etag="ocXQOWZDTNCnXXN56nqX" version="13.7.7" type="github">
   <diagram id="schZW7jJ0T7BrjeHntlN" name="Page-1">
     <mxGraphModel dx="2249" dy="1971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -114,9 +114,6 @@
         </mxCell>
         <mxCell id="HC8yFznVt69scB4Cd0NV-22" value="Chromium" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-650" y="200" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="HC8yFznVt69scB4Cd0NV-23" value="Raspbian" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="-650" y="525" width="160" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
