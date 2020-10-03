@@ -1,12 +1,6 @@
 # stolen code from 'kiteco/python-youtube-code' 
 
 import requests
-import smtplib 
-
-# API key
-api_file = open("api-key.txt", "r")
-api_key = api_file.readline()
-api_file.close()
 
 # home address input
 home = input("Enter a home address\n") 
