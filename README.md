@@ -7,6 +7,5 @@ Requirements:
 - chromium-chromedriver
 - Python >= 3.5
 - Python module 'Selenium'
-- Google Gmail address
 
 
