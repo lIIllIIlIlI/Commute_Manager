@@ -11,3 +11,28 @@
 #   run headless: https://stackoverflow.com/questions/46753393/how-to-make-firefox-headless-programmatically-in-selenium-with-python
 #
 #   Website to scrape: 'https://reiseauskunft.bahn.de/bin/query.exe/dn?protocol=https:'
+
+import logging
+
+from Commute.commute import commuteClass
+from Lib.helpers import treshold
+
+logger = logging.getLogger(__name__)
+
+
+class train(commuteClass):
+    def __init__(self, config):
+        self.name = "TRAIN"
+        self._TRAIN_STATION_START = config["TRAIN_STATION_START"]
+        self._TRAIN_STATION_DESTINATION = config["TRAIN_STATION_DESTINATION"]
+        self._TRAIN_ID = config["TRAIN_ID"]
+        tresholds = []
+        tresholds.append(treshold("TRESHOLD_LATENESS", config["TRESHOLD_LATENESS"]))
+        super().__init__(tresholds)
+        return
+
+    def calculateCommute(self):
+        return
+
+    def getCommuteSummary(self):
+        return
