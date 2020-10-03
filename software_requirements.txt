@@ -12,7 +12,7 @@ Behaviour:
     - The notification email subject shall be "Commute warning"
     - The notification email content shall be in the following format:
             """        
-            The threshold <threshold> of <default commute method> is expected to be violated.
+            A threshold of <default commute method> is expected to be violated.
 
             for every commute method:
                 Commute method: <commute method>
