@@ -22,3 +22,4 @@ Behaviour:
             """
     - In the notification email, all estimations that violate the estimation shall be coloured red, all estimations that meet the treshold exactly shall be 
       colored orange.
+    - When an unrecoverable interal error is detected, the software shall notify the client via email.
