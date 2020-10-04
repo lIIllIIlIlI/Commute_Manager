@@ -38,10 +38,18 @@ def initializeEmail(config):
     return email
 
 def initializeCommuter(config):
-    bike = bikeClass(config["ROUTE"], config["BIKE"])
-    car = carClass(config["ROUTE"], config["CAR"])
-    train = trainClass(config["TRAIN"])
-    return [car, bike, train]   
+    commuters = []
+    if "BIKE" in config:
+        bike = bikeClass(config["ROUTE"], config["BIKE"])
+        commuters.append(bike)
+    if "CAR" in config:
+        car = carClass(config["ROUTE"], config["CAR"])
+        commuters.append(car)
+    if "TRAIN" in config:
+        train = trainClass(config["TRAIN"])
+        commuters.append(train)
+    print(commuters)
+    return commuters  
 
 def calculateCommutes(commuters):
     for commuter in commuters:
@@ -74,4 +82,4 @@ if __name__ == "__main__":
     defaultCommuter = config["GENERAL"]["DEFAULT_COMMUTER"]
     if getDefaultCommputer(commutersResolved, defaultCommuter).isTresholdViolated:
         summaryString = generateSummary(commutersResolved, defaultCommuter)
-    email.sendEmail(summaryString, "Commute warning")
+        email.sendEmail(summaryString, "Commute warning")
