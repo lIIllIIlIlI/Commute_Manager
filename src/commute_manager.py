@@ -43,7 +43,7 @@ def initializeCommuter(config):
         bike = bikeClass(config["ROUTE"], config["BIKE"])
         commuters.append(bike)
     if "CAR" in config:
-        car = carClass(config["ROUTE"], config["CAR"])
+        car = carClass(config["ROUTE"], config["CAR"], config["GENERAL"]["GOOGLE_API_KEY"])
         commuters.append(car)
     if "TRAIN" in config:
         train = trainClass(config["TRAIN"])
@@ -80,6 +80,7 @@ if __name__ == "__main__":
     commutersInit = initializeCommuter(config)
     commutersResolved = calculateCommutes(commutersInit)
     defaultCommuter = config["GENERAL"]["DEFAULT_COMMUTER"]
-    if getDefaultCommputer(commutersResolved, defaultCommuter).isTresholdViolated:
+    #if getDefaultCommputer(commutersResolved, defaultCommuter).isTresholdViolated:
+    if True:
         summaryString = generateSummary(commutersResolved, defaultCommuter)
         email.sendEmail(summaryString, "Commute warning")

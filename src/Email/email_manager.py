@@ -5,6 +5,7 @@ try:
     import smtplib 
 except:
     # TODO: Report error
+    print("could not import smtplib")
     pass
 
 logger = logging.getLogger(__name__)
@@ -21,36 +22,15 @@ class email():
         Setup email server.
         """
         self.port = port
+        self.server = smtplib.SMTP("smtp.gmail.com", port) 
+        self.server.starttls() 
+        self.server.login(self.email, self.password) 
         return 
 
     def sendEmail(self, message, subject):
         """
         Send given email
         """
-        return 
-
-# # email constraints
-# sender = "..."    
-# recipient = "..."       
-# subject = "Sick Day"   
-# message = "Hi Team,\n\nSorry, but I can't make it into work today."
-
-# # creates SMTP session 
-# mailServer = smtplib.SMTP("smtp.gmail.com", 587) 
-  
-# # start TLS for security 
-# mailServer.starttls() 
-  
-# # authentication 
-# mailServer.login(sender, password) 
-# print("Email login successfull")
-  
-# # sending the mail 
-# mailServer.sendmail(sender, recipient, message)
-# print("Email send successfull")
- 
-# # terminating the session 
-# mailServer.quit() 
-
-# # success message
-# print("\nSuccessfully sent a sick-day email to", recipient, "since the travel time was too long")
+        DATA = 'From:%s\nTo:%s\nSubject:%s\n\n%s' % (self.email, self.email, \
+                                                     subject, message)
+        self.server.sendmail(self.email, self.email, DATA)
