@@ -20,6 +20,7 @@ class bike(commuteClass):
         return
 
     def calculateCommute(self):
+        
         return
 
     def getCommuteSummary(self):

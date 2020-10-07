@@ -42,12 +42,12 @@ def initializeCommuter(config):
     if "BIKE" in config:
         bike = bikeClass(config["ROUTE"], config["BIKE"])
         commuters.append(bike)
-    if "CAR" in config:
-        car = carClass(config["ROUTE"], config["CAR"], config["GENERAL"]["GOOGLE_API_KEY"])
-        commuters.append(car)
     if "TRAIN" in config:
         train = trainClass(config["TRAIN"])
         commuters.append(train)
+    if "CAR" in config:
+        car = carClass(config["ROUTE"], config["CAR"], config["GENERAL"]["GOOGLE_API_KEY"])
+        commuters.append(car)
     print(commuters)
     return commuters  
 
